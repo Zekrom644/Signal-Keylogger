@@ -1,9 +1,9 @@
 # Signal Keylogger
 
-A real-time system monitoring and keystroke logging application with a PyQt5-based dashboard, designed for authorized security testing and educational purposes.
+A real-time system monitoring and keystroke logging application with a PyQt6-based dashboard, designed for authorized security testing and educational purposes.
 
 ![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)
-![PyQt5](https://img.shields.io/badge/PyQt5-5.15.11-green.svg)
+![PyQt6](https://img.shields.io/badge/PyQt6-6.11.0-green.svg)
 ![License](https://img.shields.io/badge/license-GPL%203.0-blue.svg)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 
@@ -59,7 +59,7 @@ The developers of this software:
 - **Auto-Reconnection** - Automatically recovers from connection failures
 
 ### Dashboard Features
-- **PyQt5 GUI** - Clean, intuitive monitoring interface
+- **PyQt6 GUI** - Clean, intuitive monitoring interface
 - **Live Updates** - Real-time display without manual refresh
 - **Multi-Panel Display** - Separate panels for computer info, location, and keylogs
 - **Theme Support** - Light/dark modes with user preference persistence
@@ -91,7 +91,7 @@ The developers of this software:
 ```
 
 ### Components
-- **Main.py** - Server application with PyQt5 dashboard
+- **Main.py** - Server application with PyQt6 dashboard
 - **program.py** - Client keylogger application
 - **config.py** - Configuration management system
 - **config.json** - User-editable configuration file (auto-generated)
@@ -167,7 +167,7 @@ python keylogger/program.py
 ## 🔧 Technical Details
 
 ### Threading Model
-- **Main Thread** - GUI event loop (PyQt5)
+- **Main Thread** - GUI event loop (PyQt6)
 - **Worker Thread** - Socket accept/receive operations (QThread)
 - **Listener Thread** - Keyboard event monitoring (daemon thread)
 - **Heartbeat Thread** - Connection keep-alive (daemon thread)
@@ -249,7 +249,7 @@ python keylogger/program.py
 **Solutions:**
 - Ensure you're using the latest version
 - Check Python version (requires 3.7+)
-- Reinstall PyQt5: `pip install --force-reinstall PyQt5`
+- Reinstall PyQt6: `pip install --force-reinstall PyQt6`
 - Check console for error messages
 
 ### No Keystroke Data Displayed
@@ -336,10 +336,10 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## 📚 Resources
 
-- [PyQt5 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt5/)
+- [PyQt6 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt6/)
 - [pynput Documentation](https://pynput.readthedocs.io/)
 - [Python Socket Programming](https://docs.python.org/3/library/socket.html)
-- [Qt Threading Basics](https://doc.qt.io/qt-5/thread-basics.html)
+- [Qt Threading Basics](https://doc.qt.io/qt-6/thread-basics.html)
 
 ---
 
